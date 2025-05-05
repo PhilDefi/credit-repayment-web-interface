@@ -36,3 +36,20 @@ st.write("""
 ### BODY 1 ###################################################################
 row = st.number_input("Select the credit you want a prediction for :", min_value=0, max_value=100, value=42)
 
+
+### BODY 2 ###################################################################
+# Prepare payload for API request
+X_sample = X_test.iloc[[row]].reset_index(drop=True)
+X_sample = X_sample.astype(str)
+payload = X_sample.to_dict(orient="split")
+payload.pop('index', None)
+
+# Heroku server API URL
+url = "https://app-heroku-credit-p7-a25edceb2cf8.herokuapp.com/predict_with_explanation"
+
+# POST API request
+response = requests.post(url, json=payload)
+
+
+# Create two tabs
+tab1, tab2, tab3 = st.tabs(["📊 Prediction Chart", "🔍 Loan Details", "❓ Explanation"])
