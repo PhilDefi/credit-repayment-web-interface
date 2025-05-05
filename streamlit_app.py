@@ -6,11 +6,11 @@ import pandas as pd
 import json
 import numpy as np
 from IPython.display import Image, display
-#import base64
-#from PIL import Image
-#import io
+import base64
+from PIL import Image
+import io
 
-st.title('🎈 App Appi Name')
+st.title('🎈 App Happy Name')
 
 st.write('Hello world!')
 
