@@ -21,9 +21,9 @@ st.write('Hello world!')
 # streamlit run streamlit_interface.py
 
 # Load CSV modified test file with correct variable type
-#with open('./dtypes_enriched.json', 'r') as f:
-#    dtypes_loaded = json.load(f)
-#X_test = pd.read_csv('./test_enriched.csv', dtype=dtypes_loaded)
+# with open('./dtypes_enriched.json', 'r') as f:
+#     dtypes_loaded = json.load(f)
+# X_test = pd.read_csv('./test_enriched.csv', dtype=dtypes_loaded)
 
 
 ### HEADER  ###################################################################
