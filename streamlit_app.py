@@ -10,7 +10,7 @@ import numpy as np
 #from PIL import Image
 #import io
 
-st.title('🎈 App App Name')
+st.title('🎈 App Appi Name')
 
 st.write('Hello world!')
 
@@ -21,8 +21,8 @@ st.write('Hello world!')
 # streamlit run streamlit_interface.py
 
 # Load CSV modified test file with correct variable type
-# with open('./dtypes_enriched.json', 'r') as f:
-#     dtypes_loaded = json.load(f)
+with open('./dtypes_enriched.json', 'r') as f:
+    dtypes_loaded = json.load(f)
 # X_test = pd.read_csv('./test_enriched.csv', dtype=dtypes_loaded)
 
 
