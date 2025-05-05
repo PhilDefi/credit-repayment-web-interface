@@ -5,10 +5,10 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import json
 import numpy as np
-from IPython.display import Image, display
-import base64
-from PIL import Image
-import io
+#from IPython.display import Image, display
+#import base64
+#from PIL import Image
+#import io
 
 st.title('🎈 App App Name')
 
@@ -21,9 +21,9 @@ st.write('Hello world!')
 # streamlit run streamlit_interface.py
 
 # Load CSV modified test file with correct variable type
-with open('./data/dtypes_enriched.json', 'r') as f:
-    dtypes_loaded = json.load(f)
-X_test = pd.read_csv('./data/test_enriched.csv', dtype=dtypes_loaded)
+#with open('./dtypes_enriched.json', 'r') as f:
+#    dtypes_loaded = json.load(f)
+#X_test = pd.read_csv('./test_enriched.csv', dtype=dtypes_loaded)
 
 
 ### HEADER  ###################################################################
