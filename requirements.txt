@@ -1,7 +1,7 @@
 streamlit>=1.26.0
 matplotlib==3.9
 pandas==2.2
-requests==2.32
+requests==2.32.4
 numpy==1.26
 IPython==8.27
 Pillow==11.0.0
